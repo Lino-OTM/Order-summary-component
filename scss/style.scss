@@ -1,0 +1,106 @@
+$paleBlue  : hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+
+$veryPaleBlue   : hsl(225, 100%, 98%);
+$desaturatedBlue: hsl(224, 23%, 55%);
+$darkBlue       : hsl(223, 47%, 23%);
+
+$paragraph: 16px;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $paleBlue;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.order-summary-container {
+  min-width: 335px;
+  width: 335px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Red Hat Display", sans-serif;
+
+  .order-summary-container__image {
+    width: 100%;
+  }
+  .order-summary-container__title {
+    color: $darkBlue;
+    font-weight: 900;
+  }
+  .order-summary-container__text {
+    width: 80%;
+    margin: 0 auto 20px;
+    font-weight: 500;
+    color: $desaturatedBlue;
+    font-size: $paragraph;
+    line-height: 25px;
+  }
+  .order-summary-container__plan {
+    background-color: $veryPaleBlue;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 25px;
+    width: 85%;
+    padding: 3px 10px;
+    box-sizing: border-box;
+
+    .price-text {
+      color: $desaturatedBlue;
+      font-size: $paragraph;
+      line-height: 23px;
+      margin-left: 15px;
+    }
+    .price-text b {
+      color: $darkBlue;
+      font-weight: 900;
+    }
+    a {
+      margin-left: auto;
+    }
+    a:hover {
+      color: rgba(56, 41, 224, 0.5);
+      text-decoration: none;
+    }
+  }
+  .order-summary-container__button {
+    display: block;
+    margin: 0 auto;
+    color: #ffffff;
+    background-color: $brightBlue;
+    width: 280px;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .order-summary-container__button:hover {
+    background-color: rgba(56, 41, 224, 0.8);
+  }
+  .order-summary-container__cancel-order {
+    display: block;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: $desaturatedBlue;
+    font-weight: 900;
+  }
+  .order-summary-container__cancel-order:hover {
+    color: $darkBlue;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
