@@ -6,7 +6,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ![](/Frontend-Mentor-Order-summary-card.png)
 
-Link:
+Link: https://lino-otm.github.io/Order-summary-component/
 
 ### Built with:
 
